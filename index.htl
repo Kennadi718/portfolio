@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennadi Hope - Professional Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #eef2f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1f2937;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-weight: 700;
+            color: #f9fafb;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3b82f6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 120px auto 50px auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1em;
+            color: #6b7280;
+        }
+
+        .contact-icons {
+            margin-top: 10px;
+        }
+
+        .contact-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #1f2937;
+            font-size: 1.5em;
+            transition: 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #3b82f6;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3b82f6;
+            color: #fff;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+
+        .job, .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #3b82f6;
+            background-color: #f9fafb;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .job:hover, .project:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .job h3, .project h3 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .job span, .project span {
+            font-style: italic;
+            color: #6b7280;
+        }
+
+        ul {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills span {
+            background-color: #3b82f6;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px 5px 0 0;
+            font-size: 0.9em;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background-color: #2563eb;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #6b7280;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Kennadi Hope</h1>
+            <p>Baton Rouge, Louisiana | (224) 409-6353 | <a href="mailto:khope4@lsu.edu">khope4@lsu.edu</a></p>
+
+            <div class="contact-icons">
+                <a href="https://github.com/kennadi718" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+
+            <a href="Kennadi_Hope_Resume.pdf" class="btn" target="_blank">Download PDF</a>
+        </header>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Louisiana State University (LSU), Baton Rouge, LA</strong> – Expected May 2026</p>
+            <p>GPA: 3.15</p>
+            <p><strong>Relevant Coursework:</strong> Object-Oriented Design, Advanced Data Structures, Computer Organization & Design, Discrete Structures, Confined Space Research</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <h3>LSU Victory Team Assistant</h3>
+                <span>LSU Athletics, Baton Rouge, LA | Sep 2023 – Nov 2024</span>
+                <ul>
+                    <li>Checked in ~1,000 fans for athletic events</li>
+                    <li>Ensured fans were comfortably seated and provided excellent customer service</li>
+                    <li>Assisted in maintaining a positive event environment</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Youth Employment Program Participant</h3>
+                <span>Lawrence Hall, Chicago, IL | Feb 2024 – Dec 2024</span>
+                <ul>
+                    <li>Taught independent living skills to young adults</li>
+                    <li>Collaborated with peers and staff to deliver workshops</li>
+                    <li>Participated in peer mentoring and community engagement activities</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Cloud Computing Engineer Intern</h3>
+                <span>Verizon Cloud Platform Department (Remote) | Mar 2025 – Apr 2025</span>
+                <ul>
+                    <li>Collaborated with senior engineers to test VPN services</li>
+                    <li>Gained hands-on experience in cloud infrastructure design</li>
+                    <li>Presented findings and recommendations for secure service deployment</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Track and Field Official</h3>
+                <span>TAF Official, Baton Rouge, LA | Feb 2025 – Present</span>
+                <ul>
+                    <li>Assisted with daily operations and event setup for LSU track and field programs</li>
+                    <li>Ensured competition areas met SEC standards</li>
+                    <li>Managed equipment setup, including timing systems and throwing implements</li>
+                    <li>Developed skills in time management, teamwork, and operational organization</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>Microsoft Word</span>
+                <span>Microsoft Excel</span>
+                <span>Web Development</span>
+                <span>Networking & Communication</span>
+                <span>Java</span>
+                <span>C++</span>
+                <span>Operating Systems</span>
+                <span>GitHub</span>
+                <span>Eclipse</span>
+                <span>Terminal</span>
+                <span>VPN Testing</span>
+                <span>Cloud Infrastructure</span>
+                <span>Teamwork</span>
+                <span>Problem-Solving</span>
+                <span>Adaptability</span>
+                <span>Time Management</span>
+                <span>Agility</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>React Application Setup (Skyscanner Design System)</h3>
+                <ul>
+                    <li>Set up a local development environment and created a React-based application from scratch</li>
+                    <li>Tested application functionality to ensure usability and component consistency</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Blackjack Game Simulation</h3>
+                <ul>
+                    <li>Designed a blackjack simulation game in Java with a human player vs. AI dealer</li>
+                    <li>Developed input handling for user actions (“hit,” “stand,” “quit”) and real-time score updates</li>
+                    <li>Implemented win/lose conditions including busts and ties, with detailed round outputs</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 Kennadi Hope. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
